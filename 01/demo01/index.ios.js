@@ -9,7 +9,8 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+    Platform,
 } from 'react-native';
 
 export default class demo01 extends Component {
@@ -51,3 +52,10 @@ const styles = StyleSheet.create({
 });
 
 AppRegistry.registerComponent('demo01', () => demo01);
+if(Platform.OS == 'web'){
+    var app = document.createElement('div');
+    document.body.appendChild(app);
+    AppRegistry.runApplication('demo01', {
+        rootTag: app
+    })
+}

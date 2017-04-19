@@ -38,7 +38,8 @@ var webpackConfig = {
     config.paths.index,
   ],
   output: {
-    path: path.join(__dirname, 'output'),
+      publicPath:'',
+      path: path.join(__dirname, 'output'),
     filename: 'bundle.js'
   },
   plugins: [
