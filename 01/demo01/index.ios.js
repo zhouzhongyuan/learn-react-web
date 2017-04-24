@@ -12,6 +12,7 @@ import {
   View,
     Platform,
 } from 'react-native';
+import SpecialText from './Text';
 
 export default class demo01 extends Component {
   render() {
@@ -27,6 +28,7 @@ export default class demo01 extends Component {
           Press Cmd+R to reload,{'\n'}
           Cmd+D or shake for dev menu
         </Text>
+          <SpecialText/>
       </View>
     );
   }

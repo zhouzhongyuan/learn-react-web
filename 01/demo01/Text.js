@@ -1,14 +1,12 @@
 import React , { Component } from 'react';
-
-const ReactNative = require('react-native');
-const { Button } = ReactNative;
+import { Text } from 'react-native';
 
 class WrapButton extends Component {
     render() {
         return (
-            <Button
-                title="Learn More"
-            />
+            <Text>
+                How are you?
+            </Text>
         );
     }
 }
