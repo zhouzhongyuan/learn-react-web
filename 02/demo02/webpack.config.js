@@ -7,7 +7,7 @@ var APP_DIR = path.resolve(__dirname, '');
 var config = {
     resolve: {
         alias: {
-            'react-native': 'react-native-web',
+            'react-native': './react-native-web',
         },
     },
     entry: APP_DIR + '/index.js',
