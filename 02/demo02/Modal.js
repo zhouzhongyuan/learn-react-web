@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Modal, Text, TouchableHighlight, View } from 'react-native/src/';
+import { Modal, Button , Text, TouchableHighlight, View } from 'react-native/src/';
 
 class ModalExample extends Component {
     constructor(props){
         super(props);
         this.state = {
-            modalVisible: true,
+            modalVisible: false,
         }
         this.setModalVisible = this.setModalVisible.bind(this);
     }
@@ -29,14 +29,10 @@ class ModalExample extends Component {
                         </View>
                     </View>
                 </Modal>
-
-                <TouchableHighlight onPress={() => {
+                <Button onPress={() => {
                     console.log('Press');
                     this.setModalVisible(true)
-                }}>
-                    <Text>Show Modal</Text>
-                </TouchableHighlight>
-
+                }} title="dialog"/>
             </View>
         );
     }
